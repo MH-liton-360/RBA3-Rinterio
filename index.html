@@ -38,6 +38,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'paragraph-color': 'rgb(73, 73, 73)',
                     }
                 }
             }
@@ -50,18 +51,18 @@
 <body class="fonts-manrope">
 
     <!-- Header Section  -->
-    <header class="md:container md:mx-auto">
+    <header class="md:container md:mx-auto mb-24">
 
-        <!-- Section navbar  -->
-        <nav>
+        <!-- navbar content  -->
+        <nav class="mb-10">
             <div class="navbar bg-base-100">
 
                 <div class="flex-1">
-                    <i class="fa-solid fa-arrow-right px-3  bg-[#ABEF5F] rounded-full -rotate-45 text-black"></i>
+                    <i class="fa-solid fa-arrow-right px-3  bg-[#ABEF5F] rounded-full -rotate-45 text-black search"></i>
                     <h1 class="font-bold text-3xl">Rinterio</h1>
                 </div>
 
-                <div class="navbar-center hidden lg:flex flex-1">
+                <div class="navbar-center hidden lg:flex pr-44">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="font-semibold">Home</a></li>
                         <li><a>Service</a></li>
@@ -69,6 +70,10 @@
                         <li><a>Blogs</a></li>
                         <li><a>Contact Us</a></li>
                     </ul>
+                </div>
+                <div class=" hidden lg:flex pr-10">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping pl-5"></i>
                 </div>
                 <div class="hidden lg:flex">
                     <button class="btn bg-[#ABEF5F] px-5 py-3 rounded-3xl text-black"><a>Book Consult</a><i
@@ -87,10 +92,109 @@
             </div>
         </nav>
 
+        <!-- banner content  -->
+        <div>
+
+            <!-- image content  -->
+            <div class="lg:pl-96">
+                <img src="images/banner.png" alt="">
+            </div>
+
+            <!-- text content  -->
+            <div class="text-center">
+                <h1 class="font-extrabold text-2xl lg:text-7xl">A barn house of this design has a
+                    <br>striking
+                    appearance
+                </h1>
+                <p class="px-5 py-5 text-paragraph-color">The barn house captivates with its blend of rustic charm and
+                    modern
+                    sophistication,
+                    featuring
+                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+                <!-- button content  -->
+                <div class="">
+                    <button class="btn bg-[#c7f297] px-3 rounded-3xl text-black"><a>View Details</a><i
+                            class="fa-solid fa-arrow-right px-3 bg-black rounded-full -rotate-45 text-white"></i></button>
+                </div>
+            </div>
+
+
+
+        </div>
+
     </header>
 
     <!-- Main Section  -->
     <main>
+
+        <!-- We design thoughtful, liveable spaces section  -->
+        <section class="bg-[#5fefe841]">
+            <img class=" hidden lg:flex lg:ml-16" src="images/Vector.png" alt="">
+
+            <div class="md:container md:mx-auto mb-24">
+                <div class="flex flex-col lg:flex-row">
+
+                    <div class="lg:w-1/2">
+                        <!-- button ,text content & card  -->
+                        <div class="text-center lg:text-left">
+
+                            <!-- button content  -->
+                            <div>
+                                <button class="btn bg-white px-3 rounded-3xl text-black mt-5 mb-5"><i
+                                        class="fa-solid fa-arrow-right px-3 bg-white text-black"></i><a>About
+                                        Us</a></button>
+                            </div>
+
+                            <!-- text content  -->
+                            <h1 class="font-extrabold text-3xl mb-5">We design thoughtful, liveable spaces</h1>
+                            <p class="text-paragraph-color">Barn house, also known as a barn-style
+                                home or farm
+                                house, is a
+                                type of residential building
+                                that incorporates design elements reminiscent of traditional barns.</p>
+                        </div>
+
+                        <!-- card content  -->
+                        <div class="m-5">
+                            <!-- card-1  -->
+                            <div class="card card-side bg-base-100 shadow-xl p-5 mb-5">
+                                <img class="h-full w-auto" src="images/commercial.png" alt="">
+                                <div class="card-body">
+                                    <h2 class="card-title">Commercial</h2>
+                                    <p>Commercial houses, also known as office houses or commercial properties, are
+                                        buildings that are designed for business use and can be rented for various
+                                        commercial purposes such as offices, retail stores, restaurants, or warehouses.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- card-2  -->
+                            <div class="card card-side bg-base-100 shadow-xl p-5">
+                                <img class="h-full w-auto" src="images/residential.png" alt="">
+                                <div class="card-body">
+                                    <h2 class="card-title">Residential</h2>
+                                    <p>Residential houses for rent are properties that are available for
+                                        lease
+                                        to tenants on
+                                        a temporary basis. These houses
+                                        can be found in various locations, including urban and rural areas, and can
+                                        offer a
+                                        range of amenities, such as a
+                                        backyard, garage, and furniture.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- image content  -->
+                    <div>
+                        <img class="p-5" src="images/Rectangle.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
