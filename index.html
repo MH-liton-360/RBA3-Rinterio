@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/f849324bf6.js" crossorigin="anonymous"></script>
+
     <!-- DaisyUI & tailwind cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -47,7 +50,42 @@
 <body class="fonts-manrope">
 
     <!-- Header Section  -->
-    <header>
+    <header class="md:container md:mx-auto">
+
+        <!-- Section navbar  -->
+        <nav>
+            <div class="navbar bg-base-100">
+
+                <div class="flex-1">
+                    <i class="fa-solid fa-arrow-right px-3  bg-[#ABEF5F] rounded-full -rotate-45 text-black"></i>
+                    <h1 class="font-bold text-3xl">Rinterio</h1>
+                </div>
+
+                <div class="navbar-center hidden lg:flex flex-1">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-semibold">Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden lg:flex">
+                    <button class="btn bg-[#ABEF5F] px-5 py-3 rounded-3xl text-black"><a>Book Consult</a><i
+                            class="fa-solid fa-arrow-right px-3 bg-black rounded-full -rotate-45 text-white"></i></button>
+                </div>
+
+                <div class="navbar-right">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa fa-bars p-5 bg-slate-300 text-black rounded-full"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
 
     </header>
 
